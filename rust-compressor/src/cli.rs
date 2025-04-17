@@ -5,7 +5,7 @@ use clap::{Parser, Subcommand};
 #[command(about= "compress or doecompress files using RLE or LZ77 ", long_about = None)]
 pub struct Cli {
     #[command(subcommand)]
-    command: Commands,
+    pub command: Commands,
 }
 #[derive(Subcommand)]
 pub enum Commands {
